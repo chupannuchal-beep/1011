@@ -3,4 +3,4 @@ WORKDIR / gui
 COPY..
 RUN pip install -r requirements.txt
 ENV DISPLAY=host.docker.internal:0.0
-CMD ['python", "gui py"]
+CMD ['python", "sales_validation py"]
