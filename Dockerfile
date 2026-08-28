@@ -1,7 +1,0 @@
-Docker file
-FROM python:3.11
-WORKDIR /gui
-COPY . .
-RUN pip install -r requirements.txt
-ENV DISPLAY=host.docker.internal:0.0
-CMD ["python", "sales_validation.py"]
