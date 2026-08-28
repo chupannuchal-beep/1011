@@ -56,5 +56,5 @@ jobs:
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
       - name: Build and Push Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/cpnc:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/cpnc:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/chu:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/chu:latest
